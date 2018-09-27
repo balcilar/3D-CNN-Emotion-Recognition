@@ -14,4 +14,5 @@ Instead of using 1220x3=3660 value directly, we selected to get these 1220 point
 
 ## Architecture
 
-In our design we prefer to use 2 convolutional layer which is 32 number of 3D convolution matrix for given input. All 2 3d Convolutional layer followed by normalization layer and maxpool layer. Which means in first layer our data is 24x24x24 and we applied 3D convolution by mask of 5x5x3 with no padding and stride. Since there is no padding, the output of the layer1, become 20x20x22. (since within 5 length of mask, there is no data first 2 and last 2 element. That is why the dimension decrease by 4 (24-20=4) for x and y, ut it decreased by 2(24-22=2) for z dimension. Not in z dimension mask length is 3 so just first and last element has not output. But since we prefer to use 32 number of filter mask. 
+In our design we prefer to use 2 convolutional layer which is 32 number of 3D convolution matrix for given input. All two 3d Convolutional layer followed by normalization layer and maxpool layer. Here is our architecture.
+![Sample image](Output/cnn.jpg?raw=true "Title")
