@@ -14,5 +14,6 @@ Instead of using 1220x3=3660 value directly, we selected to get these 1220 point
 
 ## Architecture
 
-In our design we prefer to use 2 convolutional layer which is 32 number of 3D convolution matrix for given input. All two 3d Convolutional layer followed by normalization layer and maxpool layer. Here is our architecture.
+In our design we prefer to use 2 convolutional layer which is 32 number of 3D convolution matrix for given input. All two 3d Convolutional layer followed by normalization layer and maxpool layer. After convolution and maxpool layers, we get all output in line order (get it flat) and feed the fully connected later which has 128 number of neuron. Then we add drop out layer with 0.5 param to increase the ability of generalizability of the network. Finally it followed by 7 number of dense layer for classification, since or problem has 7 different number of classes. Here is the summarization of our model. Here is our architecture.
+
 ![Sample image](Output/cnn.jpg?raw=true "Title")
