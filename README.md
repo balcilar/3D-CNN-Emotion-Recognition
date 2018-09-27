@@ -18,7 +18,7 @@ In our design we prefer to use 2 convolutional layer which is 32 number of 3D co
 
 ![Sample image](Output/cnn.jpg?raw=true "Title")
 
-## Results
+## Result
 
 To train our model we prefer adam optimization algorithm with default parameter. We selected categorical cross entropy for loss function, since out problem is multi class classification problem. We performed training phase in 20 epochs and 16 batch size. Finally we reach %85 accuracy on our test case.
 
