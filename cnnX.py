@@ -17,7 +17,7 @@ a=face_samples.keys()
 X=np.zeros((len(a)*num_classes,24,24,24,1))
 Y=np.zeros((len(a)*num_classes,num_classes))
 
-# 9. READ IN iPHONE X DATA AND SHAPE
+#  READ IN iPHONE X DATA AND SHAPE
 
 # create vortex 3d matrix
 id=0
@@ -57,7 +57,7 @@ print(Y_test.shape)
 
 
 
-# 10. CREATE MODEL OF CHOICE
+#  CREATE MODEL OF CHOICE
 model = Sequential()
 model.add(Conv3D(32, (5, 5, 3), activation='relu',input_shape = (24, 24, 24,1 )))
 model.add(BatchNormalization())
