@@ -2,8 +2,8 @@ import keras
 from keras.layers import Input, Dense, Dropout, Flatten, Conv3D, MaxPool3D,BatchNormalization
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Model, Sequential
-from data.iPhoneX.faces import face_samples
-
+from faces import face_samples
+import numpy as np
 
 # read dataset
 # get point cloud in 24x24x24 voxel
