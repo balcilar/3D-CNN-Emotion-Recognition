@@ -79,7 +79,7 @@ model.summary()
 
 
 # train model on train set and evaluate on test set in every epoch
-model.fit(X_train,Y_train,validation_data=(X_test,Y_test),epochs=20,batch_size=16)
+model.fit(X_train,Y_train,validation_data=(X_test,Y_test),epochs=100,batch_size=16)
 
 
 # save model , precit test case
